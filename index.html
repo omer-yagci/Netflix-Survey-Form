@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Baştaki netflix yazısı ve açıklama bölümü -->
+      <header>
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netflix.Tell me about yourself
+        </h3>
+      </header>
+      <div id="survey-form-container">
+        <div id="survey-form">
+          <form action="result.html" method="GET" target="_blank">
+            <div class="input-box">
+              <label for="name">Name</label>
+              <br />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name "
+              />
+            </div>
+            <div class="input-box">
+              <label for="age">Age</label>
+              <br />
+              <input
+                id="age"
+                name="age"
+                type="number"
+                placeholder="Enter your age "
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <br />
+              <input
+                id="Email"
+                name="email"
+                type="email"
+                placeholder="Enter your email "
+              />
+            </div>
+            <div class="input-box">
+              <label for="content">Content Type</label>
+              <br />
+              <select name="content" id="dropdown">
+                <option value="series">Series</option>
+                <option value="movie">Movies</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="Movie">Movie Type</label>
+              <br />
+              <input
+                type="checkbox"
+                name="movie"
+                value="Comedy"
+                id="first-check"
+              />
+              <label for="first-check">Comedy</label>
+              <br />
+              <input
+                type="checkbox"
+                name="movie"
+                value="action"
+                id="second-check"
+              />
+              <label for="second-check">Action</label>
+              <br />
+              <input
+                type="checkbox"
+                name="movie"
+                value="romance"
+                id="third-check"
+              />
+              <label for="third-check">Romance</label>
+
+              <!-- Gender kısmı radio butonlar -->
+              <div class="input-box">
+                <label for="gender">Gender</label>
+                <br />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="first-radio"
+                  value="Male"
+                />
+                <label for="first-radio">Male</label>
+                <br />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="second-radio"
+                  value="Female"
+                />
+                <label for="second-radio">Female</label>
+                <br />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="third-radio"
+                  value="Other"
+                />
+                <label for="third-radio">Other</label>
+              </div>
+              <div class="input-box">
+                <label for="feedback">Feedback</label>
+                <br />
+                <textarea
+                  cols="35"
+                  rows="7"
+                  name="feedback"
+                  id="feedback"
+                  placeholder="Any comment..."
+                ></textarea>
+              </div>
+              <div class="form-submit">
+                <button class="btn">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
